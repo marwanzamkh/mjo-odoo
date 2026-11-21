@@ -8,15 +8,17 @@
     <h3>What this module adds</h3>
     <ul>
       <li><b>«MJO read access» group</b> — read-only rights on invoices, products, customers and stock. No create, no write, no delete.</li>
-      <li><b>MJO menu</b> (administrators only) — opens MJO's connection form with your Odoo address and database name filled in. No password or key leaves Odoo.</li>
+      <li><b>MJO menu</b> (administrators only) — one button that connects this database to MJO.</li>
     </ul>
-    <h3>How to connect</h3>
+    <h3>How to connect: one click</h3>
     <ol>
-      <li>Settings → Users → New: name «MJO», tick <b>MJO read access</b> only.</li>
-      <li>Sign in as that user → My Profile → Account Security → <b>New API Key</b>. Copy it.</li>
-      <li>Open the <b>MJO</b> menu, sign in to MJO (free trial at app.mjo.marketing), paste the user's login and the key, press «Test connection».</li>
+      <li>Open the <b>MJO</b> menu and press <b>Connect now</b>.</li>
+      <li>The module creates a user «MJO Connector» that belongs to <b>MJO read access</b> only, generates an API key for it and hands the key to MJO from your Odoo server over HTTPS. The key is never placed in a link.</li>
+      <li>Sign in to MJO (free trial at app.mjo.marketing) and press «Connect Odoo now». MJO tests the connection and reads your products and customers.</li>
     </ol>
-    <p>The module sends no data by itself and makes no outside calls. MJO connects with the standard Odoo external API using the user you created; delete that user or its key to stop access at once.</p>
+    <p>On Odoo Enterprise the new internal user counts towards your subscription's users. Prefer to do it yourself? The same page has «connect manually»: create your own user with <b>MJO read access</b>, make an API key for it and paste both in MJO.</p>
+    <h3>What leaves your Odoo</h3>
+    <p>Only when an administrator presses <b>Connect now</b>: one HTTPS request to app.mjo.marketing with this database's address, its name, the connector user's login and its API key. Nothing else is sent by the module. After that MJO reads through the standard Odoo external API as that read-only user. To stop access at once, archive the user «MJO Connector» or delete its key; pressing <b>Connect now</b> again replaces the key.</p>
     <p>Support: support@mjo.marketing · https://mjo.marketing</p>
   </div>
 </section>
