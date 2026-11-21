@@ -1,0 +1,13 @@
+id,name,model_id,group_id/id,operation,domain
+access_mjo_account_move,MJO read: invoices,account.move,group_mjo_read,r,
+access_mjo_account_move_line,MJO read: invoice lines,account.move.line,group_mjo_read,r,
+access_mjo_account_account,MJO read: accounts,account.account,group_mjo_read,r,
+access_mjo_account_journal,MJO read: journals,account.journal,group_mjo_read,r,
+access_mjo_account_tax,MJO read: taxes,account.tax,group_mjo_read,r,
+access_mjo_res_partner,MJO read: partners,res.partner,group_mjo_read,r,
+access_mjo_product_template,MJO read: product templates,product.template,group_mjo_read,r,
+access_mjo_product_product,MJO read: products,product.product,group_mjo_read,r,
+access_mjo_product_category,MJO read: product categories,product.category,group_mjo_read,r,
+access_mjo_stock_location,MJO read: stock locations,stock.location,group_mjo_read,r,
+access_mjo_stock_move,MJO read: stock moves,stock.move,group_mjo_read,r,
+access_mjo_stock_quant,MJO read: stock quants,stock.quant,group_mjo_read,r,
