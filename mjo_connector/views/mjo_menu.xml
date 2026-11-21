@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_mjo_connect" model="ir.actions.act_url">
+        <field name="name">Connect to MJO</field>
+        <field name="url">/mjo/connect</field>
+        <field name="target">new</field>
+    </record>
+    <menuitem id="menu_mjo_root" name="MJO" sequence="95" groups="base.group_system"
+              web_icon="mjo_connector,static/description/icon.png" action="action_mjo_connect"/>
+</odoo>
