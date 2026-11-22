@@ -1,9 +1,11 @@
 {
-    "name": "MJO Connector — AI marketing manager for your store",
-    "summary": "Connect Odoo to MJO: a read-only access group and a one-click connection (user and API key made for you). MJO reads your invoices, products and stock to prepare offers, designs and WhatsApp campaigns you approve.",
-    "version": "20.0.1.1.0",
+    "name": "MJO — AI Marketing, Offers & WhatsApp Campaigns",
+    "summary": "AI marketing manager for Odoo: reads your invoices, products and stock (read-only) and prepares margin-safe offers, ready social-media designs and WhatsApp campaigns you approve. Arabic & English. One-click setup.",
+    "version": "20.0.1.2.0",
     "category": "Marketing",
     "author": "1st Mall (MJO)",
+    "maintainer": "1st Mall (MJO)",
+    "support": "support@mjo.marketing",
     "website": "https://mjo.marketing",
     "license": "LGPL-3",
     "depends": ["account", "stock"],
@@ -13,7 +15,7 @@
         "security/ir.access.csv",
         "views/mjo_menu.xml",
     ],
-    "images": ["static/description/banner.png"],
+    "images": ["static/description/banner.png", "static/description/screenshot_connect.png"],
     "installable": True,
     "application": True,
 }
